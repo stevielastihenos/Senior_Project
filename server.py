@@ -2,7 +2,7 @@ import socket
 import time
 import serial
 
-time.sleep(2)                                                  # Start-up script(need time delay in beginning of program)
+time.sleep(20)                                                 # Start-up script (need time delay in beginning of program to ensure functionality)
 server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)      # create server socket object
 ip = socket.gethostbyname(socket.gethostname())
 port = 1234
